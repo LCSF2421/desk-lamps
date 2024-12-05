@@ -1,0 +1,251 @@
+/* General Styles for all pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #433430;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    background-color: #433430;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Index Page Styles */
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    color: #222;
+    margin-bottom: 10px;
+}
+h2, h3, .list, .cite {
+    text-align: center;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Specials Page Styles */
+.special-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.special-item img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.special-item h3 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+.special-item p {
+    color: #666;
+}
+
+/* About Page Styles */
+.about-section {
+    margin: 20px 0;
+}
+
+.about-section h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.about-section ul {
+    list-style: square inside;
+    margin: 10px 0;
+}
+
+.about-section ul li {
+    margin: 5px 0;
+}
+
+/* Team Page Styles */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 1.3em;
+    color: #222;
+}
+
+.team-member p {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+}
+
+/* Training Page Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Contact Page Styles */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #575757;
+}
+
+/* Media Page Styles */
+video, audio {
+    display: block;
+    margin: 20px auto;
+}
+
+video {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+audio {
+    width: 100%;
+    max-width: 600px;
+}
+
+section h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!-- Author: Vikramjit Singh Saini -->
+<!-- Student Number: [Your Student Number] -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Desk-Lamps</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+        <img src="media/banner.jpg" alt="Desk Lamps Banner" width="100%" height="200">
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="team.html">Our Team</a>
+        <a href="specials.html">Specials</a>
+        <a href="training.html">Training</a>
+        <a href="media.html">Media</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <h1>Contact Us</h1>
+        <p>We’d love to hear from you! Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <ol>
+            <li>Fill in your details accurately.</li>
+            <li>Select the service or product you are inquiring about.</li>
+            <li>Provide additional details or requests in the message area.</li>
+            <li>Click "Submit Request" to send your form or "Reset Form" to start over.</li>
+        </ol>
+
+        <form action="submit_form.php" method="POST">
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required autofocus>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" size="15">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Inquiry</legend>
+
+                <label for="service">Select a Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Select a Service--</option>
+                    <option value="product_inquiry">Product Inquiry</option>
+                    <option value="support_request">Support Request</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label>Preferred Contact Method:</label>
+                <input type="radio" id="email_contact" name="contact_method" value="email" required>
+                <label for="email_contact">Email</label>
+
+                <input type="radio" id="phone_contact" name="contact_method" value="phone">
+                <label for="phone_contact">Phone</label>
+
+                <label>Newsletter Subscription:</label>
+                <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                <label for="subscribe">Subscribe to our newsletter</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message here..." rows="5" required></textarea>
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit">Submit Request</button>
+                <button type="reset">Reset Form</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved.<br>
+        <a href="mailto:info@desk-lamps.com">Request information</a><br>
+        Vikramjit Singh Saini &nbsp;C0944618</p>
+    </footer>
+</body>
+</html>
