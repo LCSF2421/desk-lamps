@@ -49,12 +49,13 @@ main {
 }
 
 footer {
-    background-color: #444;
+    background-color: #433430;
     color: white;
     text-align: center;
     padding: 10px 0;
     font-size: 0.9em;
     margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 footer a {

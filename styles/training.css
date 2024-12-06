@@ -1,0 +1,30 @@
+/* General table styling */
+.training-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.training-table th, .training-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.training-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.training-table caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.training-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.training-table tr:hover {
+    background-color: #e0f7fa;
+}
