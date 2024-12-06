@@ -1,3 +1,10 @@
+/*
+Name: Vikramjit Singh Saini
+File: Page Styles
+Student Number: C0944618
+Project: Desk Lamps | LampCo.
+*/
+
 /* General Styles for all pages */
 body {
     font-family: Arial, sans-serif;
@@ -267,10 +274,34 @@ section h2 {
     color: #333;
     margin-bottom: 15px;
 }
-
 .video-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0; /* Optional for spacing */
 }
+.media-section {
+            margin: 20px auto;
+            text-align: center;
+            max-width: 800px;
+        }
+        .media-section img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .media-section video, .media-section audio {
+            margin-top: 15px;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }

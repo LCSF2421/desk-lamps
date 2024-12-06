@@ -1,3 +1,10 @@
+/*
+Name: Vikramjit Singh Saini
+File: Team Page Styles
+Student Number: C0944618
+Project: Desk Lamps | LampCo.
+*/
+
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
@@ -12,35 +19,8 @@ header img {
     display: block;
 }
 
-nav {
-    background-color: #433430;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
 
-nav a {
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 1em;
-}
 
-nav a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-}
-
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-section {
-    margin-bottom: 20px;
-}
 
 h1, h2, h3 {
     color: #433430;
