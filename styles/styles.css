@@ -21,6 +21,15 @@ header img {
     max-width: 100%;
     height: auto;
 }
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.sales-gallery img{
+    display: inline-block;
+    margin: 10px;
+}
 
 nav {
     background-color: #433430;
@@ -257,4 +266,11 @@ section h2 {
     text-align: center;
     color: #333;
     margin-bottom: 15px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0; /* Optional for spacing */
 }

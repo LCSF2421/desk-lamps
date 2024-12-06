@@ -11,7 +11,33 @@ Project: Desk Lamps
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media - Desk Lamps</title>
     <link rel="stylesheet" href="styles/styles.css">
-
+    <style>
+        .media-section {
+            margin: 20px auto;
+            text-align: center;
+            max-width: 800px;
+        }
+        .media-section img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+        .media-section video, .media-section audio {
+            margin-top: 15px;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,25 +57,43 @@ Project: Desk Lamps
 
     <main>
         <h1>Media</h1>
-        <p>Explore our media content, including product demos, customer testimonials, and much more!</p>
+        <p>Welcome to our media gallery! Discover videos, audios, and stunning visuals showcasing our innovative desk lamps.</p>
 
+        <!-- Video Section -->
         <section>
-            <h2>Product Demo Video</h2>
-            <video width="600" controls>
-                <source src="media/product-demo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Watch our latest desk lamps in action with this demo video.</p>
-        </section>
+    <h2>Product Demo Video</h2>
+    <div class="video-container">
+        <iframe width="600" height="315" src="https://www.youtube.com/embed/m6IYwzQGxbw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <p>Watch our latest desk lamps in action with this demo video.</p>
+</section>
 
-        <section>
+        <!-- Audio Section -->
+        <section class="media-section">
             <h2>Customer Testimonial Audio</h2>
             <audio controls>
                 <source src="media/customer-testimonial.mp3" type="audio/mp3">
                 Your browser does not support the audio element.
             </audio>
-            <p>Listen to what our customers have to say about our desk lamps.</p>
+            <p>Hear firsthand how our customers feel about their desk lamps.</p>
         </section>
+
+        <!-- Image Gallery Section -->
+        <section class="media-section">
+            <h2>Photo Gallery</h2>
+            <div class="gallery">
+                <img src="media/lamp1.jpg" alt="Stylish Desk Lamp">
+                <img src="media/lamp2.jpg" alt="Modern Desk Lamp">
+                <img src="media/lamp3.jpg" alt="Classic Desk Lamp">
+                <img src="media/lamp4.jpg" alt="Eco-friendly Desk Lamp">
+                <img src="media/lamp5.jpg" alt="Affordable Desk Lamp">
+                <img src="media/lamp6.jpg" alt="Best Desk Lamp">
+
+            </div>
+            <p>Explore our diverse range of desk lamps designed to suit every style and need.</p>
+        </section>
+
+        
     </main>
 
     <footer>
