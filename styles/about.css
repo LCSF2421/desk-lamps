@@ -7,12 +7,10 @@ body {
 
 /* Header styling */
 header {
-    background-color: #433430; /* Darker color for the header */
-    color: #fff; /* White text for contrast */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #433430;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hide the banner on mobile viewport */
@@ -24,11 +22,11 @@ header {
 
 /* Navigation styles */
 nav {
-    margin: 0; /* Remove extra margin */
+    background-color: #433430;
+    overflow: hidden;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 nav .nav-links {
