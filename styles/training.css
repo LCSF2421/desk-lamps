@@ -1,30 +1,48 @@
 /* General table styling */
 .training-table {
-    width: 100%;
+    border: 1px solid #433430; /* Matches navbar color */
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px auto;
+    width: 100%;
+    background: linear-gradient(180deg, #e8d9d0, #d6c6bb); /* Slightly richer gradient */
 }
 
+/* Caption styling */
+.training-table caption {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #433430; /* Matches navbar for consistency */
+    padding: 1%;
+    text-align: center;
+    background-color: #d6c6bb; /* Muted background tone */
+    border: 1px solid #a3948b; /* Subtle border */
+    border-radius: 5px;
+}
+
+/* Table header and cell styling */
 .training-table th, .training-table td {
-    border: 1px solid #ccc;
-    padding: 10px;
+    border: 1px solid #a3948b; /* Balanced border tone */
+    padding: 2%;
     text-align: center;
 }
 
+/* Header specific styling */
 .training-table th {
-    background-color: #f2f2f2;
-    font-weight: bold;
+    background: linear-gradient(180deg, #c6b0a6, #b39c91); /* Slightly darker gradient */
+    color: #ffffff; /* White text for clarity */
+    font-size: 1.15em;
 }
 
-.training-table caption {
-    font-size: 1.5em;
-    margin-bottom: 10px;
+/* Alternating row colors */
+.training-table tr:nth-child(odd) {
+    background-color: #e0cec3; /* Medium-light tone */
 }
 
 .training-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #ffffff; /* White rows for clean contrast */
 }
 
+/* Highlight row on hover */
 .training-table tr:hover {
-    background-color: #e0f7fa;
+    background-color: #cdbbae; /* Richer hover highlight */
 }
