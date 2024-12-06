@@ -1,72 +1,91 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-/* Main Content */
+nav {
+    background-color: #433430;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+
+nav a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+}
+
 main {
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
-    background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 section {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 h1, h2, h3 {
-    text-align: center;
-    color: #222;
-    margin-bottom: 20px;
+    color: #433430;
 }
 
-/* Team Member Articles */
-.team-member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
+p {
+    margin-bottom: 10px;
 }
 
-figure {
-    text-align: center;
+article.team-member {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article.team-member figure {
     margin: 0;
+    text-align: center;
 }
 
-figure img {
-    border-radius: 50%;
+article.team-member img {
     width: 150px;
     height: 150px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
-figcaption {
-    font-weight: bold;
-    color: #444;
+article.team-member figcaption {
+    font-style: italic;
+    margin-top: 10px;
 }
 
-.team-member p {
-    text-align: center;
-    max-width: 800px;
-}
-
-/* Aside */
 aside {
-    background: #f9f9f9;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     padding: 15px;
-    margin: 20px 0;
-    border-left: 4px solid #444;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-aside h3 {
-    color: #444;
-    margin-bottom: 10px;
-}
-
-/* Footer */
 footer {
-    background-color: #444;
+    background-color: #433430;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -74,11 +93,40 @@ footer {
     margin-top: 20px;
 }
 
-footer a {
-    color: #ffa500;
-    text-decoration: none;
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    article.team-member img {
+        width: 120px;
+        height: 120px;
+    }
 }
 
-footer a:hover {
-    text-decoration: underline;
+@media screen and (max-width: 480px) {
+    header img {
+        height: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        padding: 5px 10px;
+        font-size: 0.8em;
+    }
+
+    article.team-member img {
+        width: 100px;
+        height: 100px;
+    }
 }

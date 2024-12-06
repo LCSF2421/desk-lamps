@@ -22,11 +22,11 @@ header {
 
 /* Navigation styles */
 nav {
-    background-color: #433430;
-    overflow: hidden;
+    margin: 0; /* Remove extra margin */
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
 }
 
 nav .nav-links {
